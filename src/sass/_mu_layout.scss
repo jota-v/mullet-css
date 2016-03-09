@@ -1,0 +1,43 @@
+// Layout utilities
+// --------------------------------------
+.#{$namespace}display-b {
+  display: block;
+}
+.#{$namespace}display-ib {
+  display: inline-block;
+}
+
+.#{$namespace}display-i {
+  display: inline;
+}
+
+.#{$namespace}float-left {
+  float: left;
+}
+
+.#{$namespace}float-right {
+  float: right;
+}
+
+.#{$namespace}clear-right {
+  clear: right;
+}
+
+.#{$namespace}clear-left {
+  clear: left;
+}
+
+.#{$namespace}clear-both {
+  clear: both;
+}
+
+.#{$namespace}clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}

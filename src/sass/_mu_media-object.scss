@@ -1,0 +1,29 @@
+// Media Object
+.#{$namespace}media-object {
+  @if $layout {
+    @extend .#{$namespace}clearfix;
+  } @else {
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+.#{$namespace}media-object__fit {
+  float: left;
+}
+
+.#{$namespace}media-object__fit--inverse {
+  float: right;
+}
+
+.#{$namespace}media-object__fill {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}

@@ -1,0 +1,35 @@
+// Typography
+// --------------------------------------
+.#{$namespace}text--100 {
+  font-weight: 100;
+}
+
+.#{$namespace}text--300 {
+  font-weight: 300;
+}
+
+.#{$namespace}text--400 {
+  font-weight: 400;
+}
+
+.#{$namespace}text--600 {
+  font-weight: 600;
+}
+
+.#{$namespace}text--700 {
+  font-weight: 700;
+}
+
+.#{$namespace}text--900 {
+  font-weight: 900;
+}
+
+.#{$namespace}text--italic {
+  font-style: italic;
+}
+
+.#{$namespace}text--truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
