@@ -1,3 +1,4 @@
+'use babel'
 
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
@@ -7,7 +8,7 @@ import cssnano from 'cssnano';
 
 const $ = gulpLoadPlugins();
 
-gulp.task('compile', () => {
+gulp.task('sass', () => {
   return gulp.src('src/sass/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -33,41 +34,17 @@ gulp.task('optimize', () => {
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['.tmp','dist']));
 
-// gulp.task('serve', ['styles', 'fonts'], () => {
-//   browserSync({
-//     notify: false,
-//     port: 9000,
-//     server: {
-//       baseDir: ['.tmp', 'src']
-//     }
-//   });
-//
-//   gulp.watch([
-//     'src/*.html'
-//   ]).on('change', reload);
-//
-//   gulp.watch('src/styles/**/*.scss', ['styles']);
-// });
-//
-// gulp.task('serve:dist', () => {
-//   browserSync({
-//     notify: false,
-//     port: 9000,
-//     server: {
-//       baseDir: ['dist']
-//     }
-//   });
-// });
+gulp.task('watch', ['sass'], () => {
+  gulp.watch('src/styles/**/*.scss', ['sass']);
+});
 
-gulp.watch('src/styles/**/*.scss', ['compile']);
-
-gulp.task('styles', ['compile'], () => {
+gulp.task('build', ['sass'], () => {
   gulp.start('optimize');
 });
 
-gulp.task('default', ['styles'], () => {
+gulp.task('default', ['build'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
