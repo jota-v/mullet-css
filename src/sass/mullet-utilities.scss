@@ -1,21 +1,33 @@
 @import "config";
 
-@if $layout {
-  @import "_mu_layout";
+@if $accesibility {
+  @import "accesibility";
 }
 
-@if $media-object {
-  @import "_mu_media-object";
+@if $btn-reset {
+  @import "btn-reset";
 }
 
 @if $hide-show {
-  @import "_mu_hide-show";
+  @import "hide-show";
+}
+
+@if $layout {
+  @import "layout";
+}
+
+@if $media-object {
+  @import "media-object";
+}
+
+@if $performance {
+  @import "performance";
+}
+
+@if $transforms {
+  @import "transforms";
 }
 
 @if $typography {
-  @import "_mu_typography";
-}
-
-@if $transform {
-  @import "_mu_transform";
+  @import "typography";
 }

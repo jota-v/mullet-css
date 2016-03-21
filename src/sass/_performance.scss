@@ -11,10 +11,7 @@
   transform: translate3d(0,0,0);
 }
 
-.#{$namespace}animated--transform {
-  will-change: transform;
-}
-
+// UI expensive animations relievers:
 .#{$namespace}animated--size {
   will-change: width, height;
 }

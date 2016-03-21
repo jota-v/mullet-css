@@ -1,12 +1,15 @@
 // Set namespace for classes
 // --------------------------------------
-$namespace: 'mu-' !default;
+$namespace: 'mullet-' !default;
 
 
 // Require modules
 // --------------------------------------
+$accesibility: true !default;
+$btn-reset: true !default;
+$hide-show: true !default;
 $layout: true !default;
 $media-object: true !default;
-$hide-show: true !default;
+$performance: true !default;
+$transforms: true !default;
 $typography: true !default;
-$transform: true !default;

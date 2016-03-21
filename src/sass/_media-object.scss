@@ -1,0 +1,27 @@
+// Media Object
+.#{$namespace}mo {
+  @if $layout {
+    @extend .#{$namespace}clearfix;
+  } @else {
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+.#{$namespace}mo__fill {
+  overflow: hidden;
+}
+
+.#{$namespace}mo__fit {
+  float: left;
+}
+
+.#{$namespace}mo__fit--inverse {
+  float: right;
+}
