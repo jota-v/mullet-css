@@ -1,0 +1,7 @@
+.git
+.gitignore
+.gitattributes
+.editorconfig
+.npmignore
+gulpfile.babel.js
+package.json
