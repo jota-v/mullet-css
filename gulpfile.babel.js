@@ -16,17 +16,17 @@ gulp.task('sass', () => {
       outputStyle: 'expanded',
       includePaths: ['.']
     }).on('error', $.sass.logError))
-    .pipe($.postcss([
-      autoprefixer({browsers: ['last 5 versions']})
-    ]))
     .pipe($.sourcemaps.write())
     .pipe($.size({title: 'css'}))
     .pipe(gulp.dest('.tmp'))
 });
 
-gulp.task('optimize', () => {
+gulp.task('compileCSS',['sass'], () => {
   return gulp.src('.tmp/*.css')
     .pipe($.plumber())
+    .pipe($.postcss([
+      autoprefixer({browsers: ['last 5 versions']})
+    ]))
     .pipe($.postcss([
       cssnano()
     ]))
@@ -34,17 +34,13 @@ gulp.task('optimize', () => {
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('clean', del.bind(null, ['.tmp','dist']));
-
 gulp.task('watch', ['sass'], () => {
   gulp.watch('src/styles/**/*.scss', ['sass']);
 });
 
-gulp.task('build', ['sass'], () => {
-  gulp.start('optimize');
-});
+gulp.task('clean', del.bind(null, ['.tmp','dist']));
 
-gulp.task('default', ['build'], () => {
+gulp.task('default', ['compileCSS'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
