@@ -1,7 +1,6 @@
 # Mullet CSS
-Just a tipsy help for your style
-
-<img src="https://raw.githubusercontent.com/jvnni/mullet-css/master/logo.jpg" alt="mullet css">
+<img src="https://raw.githubusercontent.com/jvnni/mullet-css/master/logo.jpg" alt="mullet css" style="display:block">
+Just a little help for your style!
 
 ## What the heck is this?
 Inspired by the [mullet](https://en.wikipedia.org/wiki/Mullet_haircut), 80's hottest hairstyle.
