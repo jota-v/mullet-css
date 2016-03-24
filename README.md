@@ -12,7 +12,7 @@ Inspired by the [mullet](https://en.wikipedia.org/wiki/Mullet_haircut), 80's hot
 
 ## Installation
 ```bash
-$ npm install mulletcss --save
+$ npm install mullet-css --save
 ```
 <!-- Bower:
 ```bash
