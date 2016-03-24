@@ -4,4 +4,3 @@
 .editorconfig
 .npmignore
 gulpfile.babel.js
-package.json

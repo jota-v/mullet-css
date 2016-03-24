@@ -1,12 +1,14 @@
 {
   "name": "mullet-css",
   "description": "A small set of css utilities",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": "css utilities helpers reset mullet styles",
   "author": {
     "name": "Juan Vanni",
     "url": "http://jvnni.github.io"
   },
+  "repository": "jvnni/mullet-css",
+  "homepage": "http://github.com/jvnni/mullet-css",
   "engines": {
     "node": ">=4.0.0"
   },

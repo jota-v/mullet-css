@@ -9,13 +9,13 @@ Mullet is not a UI framework (but can work together with one), it's just a tiny 
 
 As an extra it has a small basic CSS reset, it's not a subsitute for nomalize, if not an extra layer you can use on top of it.
 
-<!-- ## Installation
+## Installation
 
 npm:
 ```bash
 $ npm install mulletcss --save
 ```
-Bower:
+<!-- Bower:
 ```bash
 $ bower install mulletcss --save
 ``` -->
