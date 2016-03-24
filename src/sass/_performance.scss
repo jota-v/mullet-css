@@ -1,21 +1,21 @@
 // Performance utilities
 
 // Apply to fixed position elements to create a new layer and avoid repaints of the element on scroll
-.#{$namespace}fixed {
+.#{$namespace}-fixed {
   transform: translate3d(0,0,0);
 }
 
 // Apply to all elements that will be animated either by animations or transitions
-.#{$namespace}animated {
+.#{$namespace}-animated {
   backface-visibility: hidden;
   transform: translate3d(0,0,0);
 }
 
 // UI expensive animations relievers:
-.#{$namespace}animated--size {
+.#{$namespace}-animated--size {
   will-change: width, height;
 }
 
-.#{$namespace}animated--position {
+.#{$namespace}-animated--position {
   will-change: top, right, bottom, left;
 }

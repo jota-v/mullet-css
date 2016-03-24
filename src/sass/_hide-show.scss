@@ -1,18 +1,18 @@
 // Hide/Show stuff
 // --------------------------------------
-.#{$namespace}show {
+.#{$namespace}-show {
   display: block;
 }
 
-.#{$namespace}show--inline {
+.#{$namespace}-show--inline {
   display: inline-block;
 }
 
-.#{$namespace}hide {
+.#{$namespace}-hide {
   display: none;
 }
 
-.#{$namespace}hide--accesibility {
+.#{$namespace}-hide--accesibility {
   position: absolute;
   left: -9999px;
   width: 1px;
@@ -20,22 +20,22 @@
   overflow: hidden;
 }
 
-.#{$namespace}hide--sm {
+.#{$namespace}-hide--sm {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .#{$namespace}hide--sm {
+  .#{$namespace}-hide--sm {
     display: block;
   }
 
-  .#{$namespace}hide--md {
+  .#{$namespace}-hide--md {
     display: none;
   }
 }
 
 @media (min-width: 1024px) {
-  .#{$namespace}hide--lg {
+  .#{$namespace}-hide--lg {
     display: none;
   }
 }

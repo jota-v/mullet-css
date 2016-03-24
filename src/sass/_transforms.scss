@@ -1,19 +1,19 @@
 // Transform
 // --------------------------------------
-.#{$namespace}reflect {
+.#{$namespace}-reflect {
   transform: scaleX(-1);
   -ms-filter: "FlipH";
     filter: FlipH;
 }
 
-.#{$namespace}rotate--90 {
+.#{$namespace}-rotate--90 {
   transform: rotate(90deg);
 }
 
-.#{$namespace}rotate--180 {
+.#{$namespace}-rotate--180 {
   transform: rotate(180deg);
 }
 
-.#{$namespace}rotate--270 {
+.#{$namespace}-rotate--270 {
   transform: rotate(270deg);
 }

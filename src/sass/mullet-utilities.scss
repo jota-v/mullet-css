@@ -1,4 +1,22 @@
-@import "config";
+// Config namespace for classes
+// ----------------------------
+$namespace: 'mullet' !default;
+
+
+// Mullet config. Set to false the modules you don't want
+// ------------------------------------------------------
+$accesibility: true !default;
+$btn-reset: true !default;
+$hide-show: true !default;
+$layout: true !default;
+$media-object: true !default;
+$performance: true !default;
+$transforms: true !default;
+$typography: true !default;
+
+
+// Module imports (no need to touch)
+// ---------------------------------
 
 @if $accesibility {
   @import "accesibility";

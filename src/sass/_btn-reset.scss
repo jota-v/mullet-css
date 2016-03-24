@@ -1,4 +1,4 @@
-.#{$namespace}btn-reset {
+.#{$namespace}-btn-reset {
   padding: 0;
   background: none;
   box-shadow: none;
@@ -7,6 +7,6 @@
   outline: 0;
 }
 
-.#{$namespace}btn-reset:focus {
+.#{$namespace}-btn-reset:focus {
   outline: 0;
 }

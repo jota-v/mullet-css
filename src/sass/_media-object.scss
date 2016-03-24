@@ -1,7 +1,7 @@
 // Media Object
-.#{$namespace}mo {
+.#{$namespace}-mo {
   @if $layout {
-    @extend .#{$namespace}clearfix;
+    @extend .#{$namespace}-clearfix;
   } @else {
     &:before,
     &:after {
@@ -14,14 +14,14 @@
   }
 }
 
-.#{$namespace}mo__fill {
+.#{$namespace}-mo__fill {
   overflow: hidden;
 }
 
-.#{$namespace}mo__fit {
+.#{$namespace}-mo__fit {
   float: left;
 }
 
-.#{$namespace}mo__fit--inverse {
+.#{$namespace}-mo__fit--inverse {
   float: right;
 }
