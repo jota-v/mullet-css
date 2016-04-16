@@ -1,5 +1,6 @@
 # Mullet CSS
 <img src="https://raw.githubusercontent.com/jvnni/mullet-css/master/logo.jpg" alt="mullet css" style="display:block">
+<br>
 <strong>Just a little help for your style!</strong>
 
 ## What the heck is this?
