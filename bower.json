@@ -1,0 +1,19 @@
+{
+  "name": "mullet-css",
+  "description": "A small set of css utilities",
+  "main": "dist/mullet-utilities.css",
+  "authors": [
+    "Juan Vanni"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "utilities",
+    "helpers",
+    "reset",
+    "mullet",
+    "styles"
+  ],
+  "homepage": "https://github.com/jvnni/mullet-css",
+  "moduleType": []
+}
