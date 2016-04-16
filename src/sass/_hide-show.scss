@@ -4,20 +4,8 @@
   display: block;
 }
 
-.#{$namespace}-show--inline {
-  display: inline-block;
-}
-
 .#{$namespace}-hide {
   display: none;
-}
-
-.#{$namespace}-hide--accesibility {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
 
 .#{$namespace}-hide--sm {
